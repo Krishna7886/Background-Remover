@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Background Remover</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Background Remover</h1>
+        <p>Upload an image to automatically remove the background.</p>
+        <div class="input-container">
+            <input type="file" id="image-input" accept="image/*">
+            <label for="image-input" class="file-label">Choose an Image</label>
+        </div>
+        <div class="images-display">
+            <div class="image-wrapper">
+                <h2>Original Image</h2>
+                <img id="original-image" src="" alt="Original">
+            </div>
+            <div class="image-wrapper">
+                <h2>Background Removed</h2>
+                <img id="result-image" src="" alt="Result">
+            </div>
+        </div>
+        <div class="download-container">
+            <a id="download-btn" class="download-btn" href="#" download="background-removed-image.png">Download Image</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
